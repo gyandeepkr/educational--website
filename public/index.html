@@ -702,7 +702,7 @@ function setLoggedIn(user) {
   document.getElementById('navUserName').textContent = user.name.split(' ')[0];
   document.getElementById('navAvatar').textContent = user.avatar;
   // Hero btn
-  document.getElementById('heroAuthBtn').textContent = 'My Dashboard ✦';\n  if (user.role === 'admin') document.getElementById('nav-admin-li').style.display = 'flex';
+  document.getElementById('heroAuthBtn').textContent = 'My Dashboard ✦';  if (user.role === 'admin') document.getElementById('nav-admin-li').style.display = 'flex';
   document.getElementById('heroAuthBtn').onclick = () => showPage('dashboard');
   // Enroll section
   document.getElementById('enrollGuestNote').style.display = 'none';
